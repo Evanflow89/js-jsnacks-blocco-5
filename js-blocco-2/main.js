@@ -58,7 +58,8 @@ const zucchine = [
 
 const zucchineSmall = [];
 const zucchineBig = [];
-
+let pesoSmall = 0;
+let pesoBig = 0;
 
 
 for (let i = 0; i < zucchine.length; i++) {
@@ -69,6 +70,14 @@ for (let i = 0; i < zucchine.length; i++) {
     }
 }
 
+for (let i = 0; i < zucchineSmall.length; i++) {
+    pesoSmall += zucchineSmall[i].peso;
+}
 
-console.log(zucchineSmall);
-console.log(zucchineBig);
+for (let i = 0; i < zucchineBig.length; i++) {
+    pesoBig += zucchineBig[i].peso;
+}
+
+
+console.log(pesoSmall);
+console.log(pesoBig);
