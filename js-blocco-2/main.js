@@ -56,3 +56,19 @@ const zucchine = [
     },
 ];
 
+const zucchineSmall = [];
+const zucchineBig = [];
+
+
+
+for (let i = 0; i < zucchine.length; i++) {
+    if (zucchine[i].lunghezza < 15) {
+        zucchineSmall.push(zucchine[i]);
+    } else {
+        zucchineBig.push(zucchine[i]);
+    }
+}
+
+
+console.log(zucchineSmall);
+console.log(zucchineBig);
