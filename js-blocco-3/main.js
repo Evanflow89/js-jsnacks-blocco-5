@@ -61,4 +61,8 @@ const auto = [
 
 const benzina = auto.filter((elm) => elm.alimentazione === "benzina");
 const diesel = auto.filter((elm) => elm.alimentazione === "diesel");
+const others = auto.filter((elm) => elm.alimentazione !== "diesel" && elm.alimentazione !== "benzina");
+
 console.log(benzina);
+console.log(diesel);
+console.log(others);
